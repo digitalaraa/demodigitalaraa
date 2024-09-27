@@ -1,3 +1,5 @@
+import $ from 'jquery'; // Add this line at the top
+
 (function($) {
 "use strict";
 
@@ -41,5 +43,4 @@ setInterval(() => {
   
 }, 1000);
 
-
-})(jQuery);
+})($);

@@ -3,7 +3,8 @@
  * Author: @umarwebdeveloper
  * Licensed under the MIT license
  */
- 
+import $ from 'jquery'; // Add this line at the top
+
 (function ( $ ) {
  
     $.fn.skillBars = function( options ) {
@@ -65,4 +66,4 @@
  
     };
  
-}( jQuery ));
+}( $ )); // Change this line to use the imported $ variable
