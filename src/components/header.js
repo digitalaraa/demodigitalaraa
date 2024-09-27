@@ -1,32 +1,721 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+// src/components/header.js
+// import React from 'react';
+// import '../../assets/css/bootstrap.min.css';
+// import '../../assets/css/magnific-popup.css';
+// import '../../assets/css/slick.css';
+// import '../../assets/css/animate.css';
+// import '../../assets/css/fontawesome.css';
+// import '../../assets/css/aos.css';
+// import '../../assets/css/remixicon.css';
+// import '../../assets/css/main.css';
+// import '../../assets/css/app.min.css';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      margin: `0 auto`,
-      padding: `var(--space-4) var(--size-gutter)`,
-      display: `flex`,
-      alignItems: `center`,
-      justifyContent: `space-between`,
-    }}
-  >
-    <Link
-      to="/"
-      style={{
-        fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
-      }}
-    >
-      {siteTitle}
-    </Link>
-    <img
-      alt="Gatsby logo"
-      height={20}
-      style={{ margin: 0 }}
-      src="data:image/svg+xml,%3Csvg fill='none' viewBox='0 0 107 28' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3CclipPath id='a'%3E%3Cpath d='m0 0h106.1v28h-106.1z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23a)'%3E%3Cg fill='%23000'%3E%3Cpath clip-rule='evenodd' d='m89 11.7c-.8 0-2.2.2-3.2 1.6v-8.10005h-2.8v16.80005h2.7v-1.3c1.1 1.5 2.6 1.5999 3.2 1.5999 3 0 5-2.2999 5-5.2999s-2-5.3-4.9-5.3zm-.7 2.5c1.7 0 2.8 1.2 2.8 2.8s-1.2 2.8-2.8 2.8c-1.7 0-2.8-1.2-2.8-2.8s1.1-2.8 2.8-2.8z' fill-rule='evenodd'/%3E%3Cpath d='m71.2 21.9999v-7.6h1.9v-2.4h-1.9v-3.40005h-2.8v3.40005h-1.1v2.4h1.1v7.6z'/%3E%3Cpath clip-rule='evenodd' d='m65.6999 12h-2.9v1.3c-.8999-1.5-2.4-1.6-3.2-1.6-2.9 0-4.8999 2.4-4.8999 5.3s1.9999 5.2999 5.0999 5.2999c.8 0 2.1001-.0999 3.1001-1.5999v1.3h2.7999zm-5.1999 7.8c-1.7001 0-2.8-1.2-2.8-2.8s1.2-2.8 2.8-2.8c1.7 0 2.7999 1.2 2.7999 2.8s-1.1999 2.8-2.7999 2.8z' fill-rule='evenodd'/%3E%3Cpath d='m79.7001 14.4c-.7-.6-1.3-.7-1.6-.7-.7 0-1.1.3-1.1.8 0 .3.1.6.9.9l.7.2c.1261.0472.2621.0945.4037.1437.7571.2632 1.6751.5823 2.0963 1.2563.3.4.5 1 .5 1.7 0 .9-.3 1.8-1.1 2.5s-1.8 1.0999-3 1.0999c-2.1 0-3.2-.9999-3.9-1.6999l1.5-1.7c.6.6 1.4 1.2 2.2 1.2s1.4-.4 1.4-1.1c0-.6-.5-.9-.9-1l-.6-.2c-.0687-.0295-.1384-.0589-.2087-.0887l-.0011-.0004c-.6458-.2729-1.3496-.5704-1.8902-1.1109-.5-.5-.8-1.1-.8-1.9 0-1 .5-1.8 1-2.3.8-.6 1.8-.7 2.6-.7.7 0 1.9.1 3.2 1.1z'/%3E%3Cpath d='m98.5 20.5-4.8-8.5h3.3l3.1 5.7 2.8-5.7h3.2l-8 15.3h-3.2z'/%3E%3Cpath d='m47 13.7h7c0 .0634.01.1267.0206.1932.0227.1435.0477.3018-.0206.5068 0 4.5-3.4 8.1-8 8.1s-8-3.6-8-8.1c0-4.49995 3.6-8.09995 8-8.09995 2.6 0 5 1.2 6.5 3.3l-2.3 1.49995c-1-1.29995-2.6-2.09995-4.2-2.09995-2.9 0-4.9 2.49995-4.9 5.39995s2.1 5.3 5 5.3c2.6 0 4-1.3 4.6-3.2h-3.7z'/%3E%3C/g%3E%3Cpath d='m18 14h7c0 5.2-3.7 9.6-8.5 10.8l-13.19995-13.2c1.1-4.9 5.5-8.6 10.69995-8.6 3.7 0 6.9 1.8 8.9 4.5l-1.5 1.3c-1.7-2.3-4.4-3.8-7.4-3.8-3.9 0-7.29995 2.5-8.49995 6l11.49995 11.5c2.9-1 5.1-3.5 5.8-6.5h-4.8z' fill='%23fff'/%3E%3Cpath d='m6.2 21.7001c-2.1-2.1-3.2-4.8-3.2-7.6l10.8 10.8c-2.7 0-5.5-1.1-7.6-3.2z' fill='%23fff'/%3E%3Cpath d='m14 0c-7.7 0-14 6.3-14 14s6.3 14 14 14 14-6.3 14-14-6.3-14-14-14zm-7.8 21.8c-2.1-2.1-3.2-4.9-3.2-7.6l10.9 10.8c-2.8-.1-5.6-1.1-7.7-3.2zm10.2 2.9-13.1-13.1c1.1-4.9 5.5-8.6 10.7-8.6 3.7 0 6.9 1.8 8.9 4.5l-1.5 1.3c-1.7-2.3-4.4-3.8-7.4-3.8-3.9 0-7.2 2.5-8.5 6l11.5 11.5c2.9-1 5.1-3.5 5.8-6.5h-4.8v-2h7c0 5.2-3.7 9.6-8.6 10.7z' fill='%237026b9'/%3E%3C/g%3E%3C/svg%3E"
-    />
+// Your header component code here
+
+
+const Header = () => {
+  return (
+    <>
+  <header className="site-header tekup-header-section" id="sticky-menu">
+    <div className="tekup-header-top bg-light1">
+      <div className="container-fuild">
+        <div className="tekup-header-info-wrap">
+          <div className="tekup-header-info dark-color">
+            <ul>
+              <li>
+                <i className="ri-map-pin-2-fill" />
+                2774 Oak Drive, Plattsburgh, New York
+              </li>
+            </ul>
+          </div>
+          <div className="tekup-header-info dark-color">
+            <ul>
+              <li>
+                <a href="tel:123">
+                  <i className="ri-phone-fill" />
+                  518-564-3200
+                </a>
+              </li>
+              <li>
+                <a href="mailto:name@email.com">
+                  <i className="ri-mail-fill" />
+                  mathemeus@example.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="tekup-header-bottom bg-white">
+      <div className="container-fuild">
+        <nav className="navbar site-navbar">
+          {/* Brand Logo*/}
+          <div className="brand-logo">
+            <a href="index.html">
+              <img
+                src="assets/images/logo/logo-dark.svg"
+                alt=""
+                className="light-version-logo"
+              />
+            </a>
+          </div>
+          <div className="menu-block-wrapper">
+            <div className="menu-overlay" />
+            <nav className="menu-block" id="append-menu-header">
+              <div className="mobile-menu-head">
+                <div className="go-back">
+                  <i className="fa fa-angle-left" />
+                </div>
+                <div className="current-menu-title" />
+                <div className="mobile-menu-close">×</div>
+              </div>
+              <ul className="site-menu-main">
+                <li className="nav-item nav-item-has-children">
+                  <a href="#" className="nav-link-item drop-trigger">
+                    Demo <i className="ri-arrow-down-s-line" />
+                  </a>
+                  <ul className="sub-menu" id="submenu-1">
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        OnePage <i className="fas fa-angle-down" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-2">
+                        <li className="sub-menu--item">
+                          <a href="index-op-01.html">
+                            <span className="menu-item-text">Home 1</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-02.html">
+                            <span className="menu-item-text">Home 2</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-03.html">
+                            <span className="menu-item-text">Home 3</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-04.html">
+                            <span className="menu-item-text">Home 4</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-05.html">
+                            <span className="menu-item-text">Home 5</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-06.html">
+                            <span className="menu-item-text">Home 6</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-07.html">
+                            <span className="menu-item-text">Home 7</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-08.html">
+                            <span className="menu-item-text">Home 8</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-09.html">
+                            <span className="menu-item-text">Home 9</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-op-10.html">
+                            <span className="menu-item-text">Home 10</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        Multipage
+                        <i className="fas fa-angle-down" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-3">
+                        <li className="sub-menu--item">
+                          <a href="index.html">
+                            <span className="menu-item-text">Home 01</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-02.html">
+                            <span className="menu-item-text">home 02</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-03.html">
+                            <span className="menu-item-text">home 03</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-04.html">
+                            <span className="menu-item-text">home 04</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-05.html">
+                            <span className="menu-item-text">home 05</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-06.html">
+                            <span className="menu-item-text">home 06</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-07.html">
+                            <span className="menu-item-text">home 07</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-08.html">
+                            <span className="menu-item-text">home 08</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-09.html">
+                            <span className="menu-item-text">home 09</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="index-10.html">
+                            <span className="menu-item-text">home 10</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <a href="about-us.html" className="nav-link-item">
+                    About Us
+                  </a>
+                </li>
+                <li className="nav-item nav-item-has-children">
+                  <a href="#" className="nav-link-item drop-trigger">
+                    Pages <i className="ri-arrow-down-s-line" />
+                  </a>
+                  <ul className="sub-menu" id="submenu-2">
+                    <li className="sub-menu--item">
+                      <a href="about-us.html">
+                        <span className="menu-item-text">About Us</span>
+                      </a>
+                    </li>
+                    <li className="sub-menu--item">
+                      <a href="pricing.html">
+                        <span className="menu-item-text">Pricing</span>
+                      </a>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        blog <i className="ri-arrow-down-s-line" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-3">
+                        <li className="sub-menu--item">
+                          <a href="blog.html">
+                            <span className="menu-item-text">Blog</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="blog-grid.html">
+                            <span className="menu-item-text">Blog grid</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="single-blog.html">
+                            <span className="menu-item-text">blog details</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        Service
+                        <i className="ri-arrow-down-s-line" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-4">
+                        <li className="sub-menu--item">
+                          <a href="service.html">
+                            <span className="menu-item-text">service</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="single-service.html">
+                            <span className="menu-item-text">
+                              service details
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        Team
+                        <i className="ri-arrow-down-s-line" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-5">
+                        <li className="sub-menu--item">
+                          <a href="team.html">
+                            <span className="menu-item-text">team</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="single-team.html">
+                            <span className="menu-item-text">team details</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        Portfolio
+                        <i className="ri-arrow-down-s-line" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-6">
+                        <li className="sub-menu--item">
+                          <a href="portfolio-01.html">
+                            <span className="menu-item-text">
+                              Portfolio Grid
+                            </span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="portfolio-02.html">
+                            <span className="menu-item-text">
+                              Portfolio masonry
+                            </span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="single-portfolio.html">
+                            <span className="menu-item-text">
+                              Single Portfolio
+                            </span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        Utility
+                        <i className="ri-arrow-down-s-line" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-7">
+                        <li className="sub-menu--item">
+                          <a href="faq.html">
+                            <span className="menu-item-text">faq</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="errors-404.html">
+                            <span className="menu-item-text">Error 404</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="testimonial.html">
+                            <span className="menu-item-text">testimonial</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="sub-menu--item nav-item-has-children">
+                      <a href="#" data-menu-get="h3" className="drop-trigger">
+                        Shop
+                        <i className="ri-arrow-down-s-line" />
+                      </a>
+                      <ul className="sub-menu shape-none" id="submenu-8">
+                        <li className="sub-menu--item">
+                          <a href="shop.html">
+                            <span className="menu-item-text">shop</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="single-shop.html">
+                            <span className="menu-item-text">Shop Details</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="my-cart.html">
+                            <span className="menu-item-text">My Cart</span>
+                          </a>
+                        </li>
+                        <li className="sub-menu--item">
+                          <a href="checkout.html">
+                            <span className="menu-item-text">Checkout</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item nav-item-has-children">
+                  <a href="#" className="nav-link-item drop-trigger">
+                    Blog <i className="ri-arrow-down-s-line" />
+                  </a>
+                  <ul className="sub-menu" id="submenu-9">
+                    <li className="sub-menu--item">
+                      <a href="blog.html">
+                        <span className="menu-item-text">blog</span>
+                      </a>
+                    </li>
+                    <li className="sub-menu--item">
+                      <a href="blog-grid.html">
+                        <span className="menu-item-text">Blog grid</span>
+                      </a>
+                    </li>
+                    <li className="sub-menu--item">
+                      <a href="single-blog.html">
+                        <span className="menu-item-text">blog Details</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <a href="contact-us.html" className="nav-link-item">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div className="header-btn header-btn-l1 ms-auto d-none d-xs-inline-flex">
+            <div className="tekup-header-icon">
+              <div className="tekup-header-search">
+                <i className="ri-search-line" />
+              </div>
+              <a
+                className="tekup-default-btn tekup-header-btn"
+                href="contact-us.html"
+              >
+                Get in Touch <i className="ri-arrow-right-up-line" />
+              </a>
+            </div>
+          </div>
+          {/* mobile menu trigger */}
+          <div className="mobile-menu-trigger">
+            <span />
+          </div>
+          {/*/.Mobile Menu Hamburger Ends*/}
+        </nav>
+      </div>
+    </div>
+    <div className="tekup-header-search-section">
+      <div className="container">
+        <div className="tekup-header-search-box">
+          <input type="search" placeholder="Search here..." />
+          <button id="header-search" type="button">
+            <img src="assets/images/v1/search-dark.png" alt="" />
+          </button>
+          <p>Type above and press Enter to search. Press Close to cancel.</p>
+        </div>
+      </div>
+      <div className="tekup-header-search-close">
+        <i className="ri-close-line" />
+      </div>
+    </div>
   </header>
-)
+  <div className="search-overlay" />
+  {/*End landex-header-section */}
+  <div className="tekup-hero-section2">
+    <div className="tekup-hero-slider">
+      <div
+        className="tekup-hero-slider-item"
+        style={{ backgroundImage: "url(assets/images/hero/hero-bg3.png)" }}
+      >
+        <div className="container">
+          <div className="tekup-hero-content center white-color large-content">
+            <div className="animated" data-animation-in="fadeInRight">
+              <h1>The best innovative technology solutions</h1>
+              <p>
+                We are architects of innovation, trailblazers of technological
+                advancement
+              </p>
+            </div>
+            <div
+              className="tekup-extra-mt animated"
+              data-animation-in="fadeInUp"
+              data-delay-in="0.3"
+            >
+              <a
+                className="tekup-default-btn tekup-white-btn"
+                href="contact-us.html"
+              >
+                Start a Project <i className="ri-arrow-right-up-line" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="tekup-hero-slider-item"
+        style={{ backgroundImage: "url(assets/images/hero/hero-bg1.png)" }}
+      >
+        <div className="container">
+          <div className="tekup-hero-content center white-color large-content">
+            <div className="animated" data-animation-in="fadeInRight">
+              <h1>The best innovative technology solutions</h1>
+              <p>
+                We are architects of innovation, trailblazers of technological
+                advancement
+              </p>
+            </div>
+            <div
+              className="tekup-extra-mt animated"
+              data-animation-in="fadeInUp"
+              data-delay-in="0.3"
+            >
+              <a
+                className="tekup-default-btn tekup-white-btn"
+                href="contact-us.html"
+              >
+                Start a Project <i className="ri-arrow-right-up-line" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section tekup-section-padding">
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-6" data-aos="fade-up" data-aos-duration={600}>
+          <div className="tekup-thumb mr-30">
+            <img src="assets/images/v2/thumb1.png" alt="" />
+            <div className="tekup-thumb-card">
+              <img src="assets/images/v3/rating.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-6 d-flex align-items-center">
+          <div className="tekup-default-content ml-60">
+            <h2>We are increasing business success with technology</h2>
+            <div className="tekup-extra-mt">
+              <div className="tekup-icon-list-wrap">
+                <div className="tekup-icon-list-item">
+                  <div className="tekup-icon-list-icon">
+                    <img src="assets/images/v2/icon1.png" alt="" />
+                  </div>
+                  <div className="tekup-icon-list-data">
+                    <h5>Quality Solution for Business</h5>
+                    <p>
+                      We are architects of innovation, trailblazers of
+                      technological advancement, and partners in your success
+                      dynamic
+                    </p>
+                  </div>
+                </div>
+                <div className="tekup-icon-list-item">
+                  <div className="tekup-icon-list-icon">
+                    <img src="assets/images/v2/icon2.png" alt="" />
+                  </div>
+                  <div className="tekup-icon-list-data">
+                    <h5>Amazing Expert Teams</h5>
+                    <p>
+                      Support company that will learn the intimate details of
+                      your business technology and process while also
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="tekup-extra-mt">
+              <a className="tekup-default-btn" href="about-us.html">
+                More About <i className="ri-arrow-right-up-line" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section tekup-section-padding-bottom">
+    <div className="container">
+      <div id="tekup-counter" />
+      <div className="tekup-counter-wrap wrap2">
+        <div
+          className="tekup-counter-data tekup-counter-data2"
+          data-aos="fade-up"
+          data-aos-duration={400}
+        >
+          <h2>
+            <span data-percentage={26} className="tekup-counter" />+
+          </h2>
+          <h5>Years of Experience</h5>
+          <p>
+            To succeed, every software solution be deeply integrated into the
+          </p>
+        </div>
+        <div
+          className="tekup-counter-data tekup-counter-data2"
+          data-aos="fade-up"
+          data-aos-duration={600}
+        >
+          <h2>
+            <span data-percentage={730} className="tekup-counter" />+
+          </h2>
+          <h5>Successfully Projects Done</h5>
+          <p>
+            To succeed, every software solution be deeply integrated into the
+          </p>
+        </div>
+        <div
+          className="tekup-counter-data tekup-counter-data2"
+          data-aos="fade-up"
+          data-aos-duration={800}
+        >
+          <h2>
+            <span data-percentage={198} className="tekup-counter" />+
+          </h2>
+          <h5>Satisfied Happy Clients</h5>
+          <p>
+            To succeed, every software solution be deeply integrated into the
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  {/* Footer  */}
+  <footer className="tekup-footer-section dark-bg">
+    <div className="container">
+      <div className="tekup-footer-top tekup-section-padding">
+        <div className="row">
+          <div className="col-xl-4 offset-xl-1 col-lg-4 order-lg-4">
+            <div className="tekup-footer-title light-color light-color">
+              <h5>Subscribe Our Newsletter</h5>
+              <p>
+                Get ready to work together for the better solution for your
+                business
+              </p>
+            </div>
+            <div className="tekup-subscription">
+              <form action="#">
+                <input type="email" placeholder="Enter your email" />
+                <button id="tekup-subscription-btn" type="button">
+                  <i className="ri-send-plane-fill" />
+                </button>
+              </form>
+            </div>
+            <div className="tekup-social-icon m_bottom">
+              <ul>
+                <li>
+                  <a href="https://www.facebook.com/">
+                    <i className="ri-facebook-fill" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/">
+                    <i className="ri-linkedin-fill" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/">
+                    <i className="ri-twitter-fill" />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/">
+                    <i className="ri-instagram-fill" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-xl-2 col-lg-2 col-md-4">
+            <div className="tekup-footer-menu light-color">
+              <div className="tekup-footer-title light-color">
+                <h5>Quick Links</h5>
+              </div>
+              <ul>
+                <li>
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a href="team.html">Our Team</a>
+                </li>
+                <li>
+                  <a href="pricing.html">Pricing</a>
+                </li>
+                <li>
+                  <a href="blog.html">Blogs</a>
+                </li>
+                <li>
+                  <a href="contact-us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-xl-3 col-lg-3 col-md-4">
+            <div className="tekup-footer-menu light-color extar-margin">
+              <div className="tekup-footer-title light-color">
+                <h5>Services</h5>
+              </div>
+              <ul>
+                <li>
+                  <a href="">UI/UX Design</a>
+                </li>
+                <li>
+                  <a href="">App Development</a>
+                </li>
+                <li>
+                  <a href="">Digital Marketing</a>
+                </li>
+                <li>
+                  <a href="">Web Development</a>
+                </li>
+                <li>
+                  <a href="">Cyber Security</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-xl-2 col-lg-3 col-md-4">
+            <div className="tekup-footer-menu light-color mb-0">
+              <div className="tekup-footer-title light-color">
+                <h5>Information</h5>
+              </div>
+              <ul>
+                <li>
+                  <a href="">Working Process</a>
+                </li>
+                <li>
+                  <a href="">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                  <a href="faq.html">Faqs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="tekup-footer-bottom center">
+        <div className="tekup-copywright light-color right">
+          <p>
+            {" "}
+            © <span id="current-year" /> MthemeUs. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</>
 
-export default Header
+  );
+};
+
+export default Header;
