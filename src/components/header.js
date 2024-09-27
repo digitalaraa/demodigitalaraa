@@ -32,14 +32,14 @@ const Header = () => {
 
   return (
     <>
-    <div className="tekup-preloader-wrap">
+    {/* <div className="tekup-preloader-wrap">
       <div className="tekup-preloader">
         <div />
         <div />
         <div />
         <div />
       </div>
-    </div>
+    </div> */}
     
     {/* progress circle */}
     <ProgressBar />
