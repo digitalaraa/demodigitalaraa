@@ -17,6 +17,23 @@ import React from 'react';
 const Header = () => {
   return (
     <>
+  {/* progress circle */}
+  <div className="paginacontainer">
+    <div className="progress-wrap">
+      <svg
+        className="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+      <div className="top-arrow">
+        <img src="assets/images/rightarrow.svg" alt="" />
+      </div>
+    </div>
+  </div>
+  {/* End All Js */}
   <header className="site-header tekup-header-section" id="sticky-menu">
     <div className="tekup-header-top bg-light1">
       <div className="container-fuild">
@@ -581,6 +598,607 @@ const Header = () => {
           <p>
             To succeed, every software solution be deeply integrated into the
           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section bg-light1 tekup-section-padding2">
+    <div className="container">
+      <div className="tekup-section-title center">
+        <h2>We deal with the aspects of professional IT services</h2>
+      </div>
+      <div className="row">
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-iconbox-wrap3 bg-white"
+            data-aos="fade-up"
+            data-aos-duration={400}
+          >
+            <div className="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon3.png" alt="" />
+            </div>
+            <div className="tekup-iconbox-data3">
+              <a href="single-service.html">
+                <h5>Web Development</h5>
+              </a>
+              <p>
+                We are architects technological advancement, and partners in
+                your success. As a dynamic
+              </p>
+            </div>
+          </div>
+          <div
+            className="tekup-iconbox-wrap3 bg-white"
+            data-aos="fade-up"
+            data-aos-duration={1000}
+          >
+            <div className="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon6.png" alt="" />
+            </div>
+            <div className="tekup-iconbox-data3">
+              <a href="single-service.html">
+                <h5>Digital Marketing</h5>
+              </a>
+              <p>
+                We are architects technological advancement, and partners in
+                your success. As a dynamic
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-iconbox-wrap3 bg-white"
+            data-aos="fade-up"
+            data-aos-duration={600}
+          >
+            <div className="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon4.png" alt="" />
+            </div>
+            <div className="tekup-iconbox-data3">
+              <a href="single-service.html">
+                <h5>App Development</h5>
+              </a>
+              <p>
+                We are architects technological advancement, and partners in
+                your success. As a dynamic
+              </p>
+            </div>
+          </div>
+          <div
+            className="tekup-iconbox-wrap3 bg-white"
+            data-aos="fade-up"
+            data-aos-duration={1200}
+          >
+            <div className="tekup-iconbox-icon3">
+              <img src="assets/images/v2/icon7.png" alt="" />
+            </div>
+            <div className="tekup-iconbox-data3">
+              <a href="single-service.html">
+                <h5>IT Management</h5>
+              </a>
+              <p>
+                We are architects technological advancement, and partners in
+                your success. As a dynamic
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-12">
+          <div className="row">
+            <div className="col-xl-12 col-md-6">
+              <div
+                className="tekup-iconbox-wrap3 bg-white"
+                data-aos="fade-up"
+                data-aos-duration={800}
+              >
+                <div className="tekup-iconbox-icon3">
+                  <img src="assets/images/v2/icon5.png" alt="" />
+                </div>
+                <div className="tekup-iconbox-data3">
+                  <a href="single-service.html">
+                    <h5>UI/UX Design</h5>
+                  </a>
+                  <p>
+                    We are architects technological advancement, and partners in
+                    your success. As a dynamic
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-xl-12 col-md-6">
+              <div
+                className="tekup-iconbox-wrap3 bg-white"
+                data-aos="fade-up"
+                data-aos-duration={1400}
+              >
+                <div className="tekup-iconbox-icon3">
+                  <img src="assets/images/v2/icon8.png" alt="" />
+                </div>
+                <div className="tekup-iconbox-data3">
+                  <a href="single-service.html">
+                    <h5>Cyber Security</h5>
+                  </a>
+                  <p>
+                    We are architects technological advancement, and partners in
+                    your success. As a dynamic
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section tekup-section-padding">
+    <div className="container">
+      <div className="tekup-section-title center">
+        <h2>Explore our recent projects</h2>
+      </div>
+      <div className="row">
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-portfolio-wrap2"
+            data-aos="fade-up"
+            data-aos-duration={400}
+          >
+            <div className="tekup-portfolio-thumb2">
+              <img src="assets/images/p2/p_1.png" alt="" />
+              <div className="tekup-portfolio-data2">
+                <a href="single-portfolio.html">
+                  <h5>Design of the year</h5>
+                </a>
+                <p>UI/UX Design</p>
+                <a
+                  className="tekup-portfolio-btn2"
+                  href="single-portfolio.html"
+                >
+                  <i className="ri-arrow-right-up-line" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-portfolio-wrap2"
+            data-aos="fade-up"
+            data-aos-duration={600}
+          >
+            <div className="tekup-portfolio-thumb2">
+              <img src="assets/images/p2/p_2.png" alt="" />
+              <div className="tekup-portfolio-data2">
+                <a href="single-portfolio.html">
+                  <h5> Ways to level up your brand</h5>
+                </a>
+                <p>Branding</p>
+                <a
+                  className="tekup-portfolio-btn2"
+                  href="single-portfolio.html"
+                >
+                  <i className="ri-arrow-right-up-line" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-portfolio-wrap2"
+            data-aos="fade-up"
+            data-aos-duration={800}
+          >
+            <div className="tekup-portfolio-thumb2">
+              <img src="assets/images/p2/p_3.png" alt="" />
+              <div className="tekup-portfolio-data2">
+                <a href="single-portfolio.html">
+                  <h5>Cyber Security Analysis</h5>
+                </a>
+                <p>Technology</p>
+                <a
+                  className="tekup-portfolio-btn2"
+                  href="single-portfolio.html"
+                >
+                  <i className="ri-arrow-right-up-line" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-portfolio-wrap2"
+            data-aos="fade-up"
+            data-aos-duration={1000}
+          >
+            <div className="tekup-portfolio-thumb2">
+              <img src="assets/images/p2/p_4.png" alt="" />
+              <div className="tekup-portfolio-data2">
+                <a href="single-portfolio.html">
+                  <h5>Design Discussion</h5>
+                </a>
+                <p>Design</p>
+                <a
+                  className="tekup-portfolio-btn2"
+                  href="single-portfolio.html"
+                >
+                  <i className="ri-arrow-right-up-line" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-8 col-md-12">
+          <div
+            className="tekup-portfolio-wrap2"
+            data-aos="fade-up"
+            data-aos-duration={1200}
+          >
+            <div className="tekup-portfolio-thumb2">
+              <img src="assets/images/p2/p_5.png" alt="" />
+              <div className="tekup-portfolio-data2">
+                <a href="single-portfolio.html">
+                  <h5>Product Security Analysis</h5>
+                </a>
+                <p>Product</p>
+                <a
+                  className="tekup-portfolio-btn2"
+                  href="single-portfolio.html"
+                >
+                  <i className="ri-arrow-right-up-line" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="tekup-center-btn">
+        <a className="tekup-default-btn" href="portfolio-01.html">
+          View All Projects <i className="ri-arrow-right-up-line" />
+        </a>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section tekup-section-padding2 dark-bg">
+    <div className="container">
+      <div className="tekup-section-title center light-color">
+        <h2>Effective &amp; flexible pricing</h2>
+      </div>
+      <div className="row">
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-pricing-wrap"
+            data-aos="fade-up"
+            data-aos-duration={400}
+          >
+            <div className="tekup-pricing-header">
+              <h4>Startup</h4>
+              <p>
+                Best for Startup business owners who needs website for business.
+              </p>
+            </div>
+            <div className="tekup-pricing-price">
+              <h2>
+                $99<span>/month</span>
+              </h2>
+            </div>
+            <a className="tekup-pricing-btn" href="pricing.html">
+              Select This Package <i className="ri-arrow-right-up-line" />
+            </a>
+            <div className="tekup-pricing-feature">
+              <ul>
+                <li>
+                  <i className="ri-check-line" />
+                  10 GB disk space availability
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  50 GB NVMe SSD for use
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free platform access for all
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free lifetime updates facility
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free one year support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-pricing-wrap"
+            data-aos="fade-up"
+            data-aos-duration={600}
+          >
+            <div className="tekup-pricing-header">
+              <h4>Business</h4>
+              <p>
+                Best for Startup business owners who needs website for business.
+              </p>
+            </div>
+            <div className="tekup-pricing-price">
+              <h2>
+                $299<span>/month</span>
+              </h2>
+            </div>
+            <a className="tekup-pricing-btn active" href="pricing.html">
+              Select This Package <i className="ri-arrow-right-up-line" />
+            </a>
+            <div className="tekup-pricing-feature">
+              <ul>
+                <li>
+                  <i className="ri-check-line" />
+                  10 GB disk space availability
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  50 GB NVMe SSD for use
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free platform access for all
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free lifetime updates facility
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free one year support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="col-xl-4 col-md-6">
+          <div
+            className="tekup-pricing-wrap"
+            data-aos="fade-up"
+            data-aos-duration={800}
+          >
+            <div className="tekup-pricing-header">
+              <h4>Enterprise</h4>
+              <p>
+                Best for Startup business owners who needs website for business.
+              </p>
+            </div>
+            <div className="tekup-pricing-price">
+              <h2>
+                $779<span>/month</span>
+              </h2>
+            </div>
+            <a className="tekup-pricing-btn" href="pricing.html">
+              Select This Package <i className="ri-arrow-right-up-line" />
+            </a>
+            <div className="tekup-pricing-feature">
+              <ul>
+                <li>
+                  <i className="ri-check-line" />
+                  10 GB disk space availability
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  50 GB NVMe SSD for use
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free platform access for all
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free lifetime updates facility
+                </li>
+                <li>
+                  <i className="ri-check-line" />
+                  Free one year support
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section tekup-section-padding">
+    <div className="container">
+      <div className="tekup-section-title center">
+        <h2>Trusted by more than 200+ client’s around the world</h2>
+      </div>
+      <div className="tekup-t-two-column-slider-wrap">
+        <div className="tekup-t-two-column-slider">
+          <div className="tekup-t-two-column-slider-item">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className="tekup-t-two-column-thumb">
+                  <img src="assets/images/v2/t-thumb1.png" alt="" />
+                </div>
+              </div>
+              <div className="col-lg-7 d-flex align-items-center">
+                <div className="tekup-t-two-column-data">
+                  <div className="tekup-t-two-column-rating">
+                    <ul>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    “ If you’re looking for a rewarding career and a chance to
+                    make an impact, you’ve come to the right place We will
+                    transform your business through our techniques! ”
+                  </p>
+                  <div className="tekup-t-two-column-author">
+                    <h5>Alexander Cameron</h5>
+                    <span>Lead Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="tekup-t-two-column-slider-item">
+            <div className="row">
+              <div className="col-lg-5">
+                <div className="tekup-t-two-column-thumb">
+                  <img src="assets/images/v2/t-thumb2.png" alt="" />
+                </div>
+              </div>
+              <div className="col-lg-7 d-flex align-items-center">
+                <div className="tekup-t-two-column-data">
+                  <div className="tekup-t-two-column-rating">
+                    <ul>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                      <li>
+                        <i className="ri-star-s-fill" />
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    “ If you’re looking for a rewarding career and a chance to
+                    make an impact, you’ve come to the right place We will
+                    transform your business through our techniques! ”
+                  </p>
+                  <div className="tekup-t-two-column-author">
+                    <h5>Alexander Cameron</h5>
+                    <span>Lead Developer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {/* End section */}
+  <div className="section bg-light1 tekup-section-padding2">
+    <div className="container">
+      <div className="tekup-section-title">
+        <div className="row">
+          <div className="col-xxl-5 col-lg-6">
+            <h2>Recent blog &amp; articles about technology</h2>
+          </div>
+          <div className="col-xxl-7 col-lg-6 d-flex align-items-center justify-content-end">
+            <div className="tekup-title-btn">
+              <a className="tekup-default-btn" href="blog.html">
+                View All Posts <i className="ri-arrow-right-up-line" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="row">
+        <div
+          className="col-xl-4 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration={400}
+        >
+          <div className="tekup-blog-wrap2">
+            <div className="tekup-blog-thumb2">
+              <img src="assets/images/blog/blog4.png" alt="" />
+              <div className="tekup-blog-content2">
+                <a href="single-blog.html">
+                  <h3>Technology support allows erie non-profit to serve</h3>
+                </a>
+                <div className="tekup-blog-meta tekup-blog-meta2">
+                  <ul>
+                    <li>
+                      <a href="single-blog.html">Technology</a>
+                    </li>
+                    <li>
+                      <a href="single-blog.html">26 June 2023</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-xl-4 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration={600}
+        >
+          <div className="tekup-blog-wrap2">
+            <div className="tekup-blog-thumb2">
+              <img src="assets/images/blog/blog5.png" alt="" />
+              <div className="tekup-blog-content2">
+                <a href="single-blog.html">
+                  <h3>The act of knowledge &amp; the act of design thinking</h3>
+                </a>
+                <div className="tekup-blog-meta tekup-blog-meta2">
+                  <ul>
+                    <li>
+                      <a href="single-blog.html">Technology</a>
+                    </li>
+                    <li>
+                      <a href="single-blog.html">26 June 2023</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col-xl-4 col-md-6"
+          data-aos="fade-up"
+          data-aos-duration={800}
+        >
+          <div className="tekup-blog-wrap2">
+            <div className="tekup-blog-thumb2">
+              <img src="assets/images/blog/blog6.png" alt="" />
+              <div className="tekup-blog-content2">
+                <a href="single-blog.html">
+                  <h3>Core on web vitals, a smas magazine case study</h3>
+                </a>
+                <div className="tekup-blog-meta tekup-blog-meta2">
+                  <ul>
+                    <li>
+                      <a href="single-blog.html">Technology</a>
+                    </li>
+                    <li>
+                      <a href="single-blog.html">26 June 2023</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
