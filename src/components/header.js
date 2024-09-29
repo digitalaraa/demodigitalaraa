@@ -17,6 +17,7 @@ import './Header.css'; // Import CSS for Header component
 
 import ProgressBar from './ProgressBar'; // Adjust the path if your structure is different
 import HeroSlider from './HeroSlider'; // Import the slider component
+import BusinessSuccessSection from './BusinessSuccessSection';
 
 const Header = () => {
 
@@ -80,12 +81,12 @@ const Header = () => {
         <div className="container-fuild">
           <nav className="navbar site-navbar">
             {/* Brand Logo*/}
-            <div className="brand-logo">
+            <div className="brand-logo1">
               <a href="index.html">
                 <img
-                  src="assets/images/logo/logo-dark.svg"
+                  src="assets/images/logo/logo.png"
                   alt=""
-                  className="light-version-logo"
+                  className="light-version-logo1"
                 />
               </a>
             </div>
@@ -454,61 +455,10 @@ const Header = () => {
     {/*End landex-header-section */}
     <HeroSlider />
     {/* End section */}
-    <div className="section tekup-section-padding">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6" data-aos="fade-up" data-aos-duration={600}>
-            <div className="tekup-thumb mr-30">
-              <img src="assets/images/v2/thumb1.png" alt="" />
-              <div className="tekup-thumb-card">
-                <img src="assets/images/v3/rating.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 d-flex align-items-center">
-            <div className="tekup-default-content ml-60">
-              <h2>We are increasing business success with technology</h2>
-              <div className="tekup-extra-mt">
-                <div className="tekup-icon-list-wrap">
-                  <div className="tekup-icon-list-item">
-                    <div className="tekup-icon-list-icon">
-                      <img src="assets/images/v2/icon1.png" alt="" />
-                    </div>
-                    <div className="tekup-icon-list-data">
-                      <h5>Quality Solution for Business</h5>
-                      <p>
-                        We are architects of innovation, trailblazers of
-                        technological advancement, and partners in your success
-                        dynamic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="tekup-icon-list-item">
-                    <div className="tekup-icon-list-icon">
-                      <img src="assets/images/v2/icon2.png" alt="" />
-                    </div>
-                    <div className="tekup-icon-list-data">
-                      <h5>Amazing Expert Teams</h5>
-                      <p>
-                        Support company that will learn the intimate details of
-                        your business technology and process while also
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="tekup-extra-mt">
-                <a className="tekup-default-btn" href="about-us.html">
-                  More About <i className="ri-arrow-right-up-line" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <BusinessSuccessSection />
+
     {/* End section */}
-    <div className="section tekup-section-padding-bottom">
+    <div className="section tekup-section-padding-bottom hidden">
       <div className="container">
         <div id="tekup-counter" />
         <div className="tekup-counter-wrap wrap2">
@@ -555,7 +505,7 @@ const Header = () => {
       </div>
     </div>
     {/* End section */}
-    <div className="section bg-light1 tekup-section-padding2">
+    <div className="section bg-light1 tekup-section-padding2 hidden">
       <div className="container">
         <div className="tekup-section-title center">
           <h2>We deal with the aspects of professional IT services</h2>
@@ -685,7 +635,7 @@ const Header = () => {
       </div>
     </div>
     {/* End section */}
-    <div className="section tekup-section-padding">
+    <div className="section tekup-section-padding hidden">
       <div className="container">
         <div className="tekup-section-title center">
           <h2>Explore our recent projects</h2>
@@ -815,7 +765,7 @@ const Header = () => {
       </div>
     </div>
     {/* End section */}
-    <div className="section tekup-section-padding2 dark-bg">
+    <div className="section tekup-section-padding2 dark-bg hidden">
       <div className="container">
         <div className="tekup-section-title center light-color">
           <h2>Effective &amp; flexible pricing</h2>
@@ -963,7 +913,7 @@ const Header = () => {
       </div>
     </div>
     {/* End section */}
-    <div className="section tekup-section-padding">
+    <div className="section tekup-section-padding hidden">
       <div className="container">
         <div className="tekup-section-title center">
           <h2>Trusted by more than 200+ client’s around the world</h2>
@@ -1057,7 +1007,7 @@ const Header = () => {
       </div>
     </div>
     {/* End section */}
-    <div className="section bg-light1 tekup-section-padding2">
+    <div className="section bg-light1 tekup-section-padding2 hidden">
       <div className="container">
         <div className="tekup-section-title">
           <div className="row">
