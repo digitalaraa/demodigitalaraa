@@ -1,0 +1,40 @@
+/* styles.css or your corresponding CSS file */
+.tekup-hero-slider-item {
+    height: 100vh; /* Set a height for the slider item */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color */
+    position: relative;
+  }
+  
+  .hero-bg-1 {
+    background-image: url('../../assets/images/hero/7.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-bg-2 {
+    background-image: url('../../assets/images/hero/banner.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-bg-3 {
+    background-image: url('../../assets/images/hero/banner-2.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-bg-4 {
+    background-image: url('../../assets/images/hero/banner-3.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-bg-5 {
+    background-image: url('../../assets/images/hero/4.jpg'); /* Corrected path */
+    background-size: cover;
+    background-position: center;
+  }
+  

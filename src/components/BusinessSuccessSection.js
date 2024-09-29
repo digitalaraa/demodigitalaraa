@@ -2,14 +2,14 @@ import React, { useEffect } from 'react';
 import { Link } from 'gatsby';
 
 // Import images from the assets folder
-import thumb1 from '../../assets/images/v3/thumb1.png';
+import thumb1 from '../../assets/images/blog/2.jpg';
 import rating from '../../assets/images/v3/rating.png';
 import icon1 from '../../assets/images/v3/icon1.png';
 import icon2 from '../../assets/images/v3/icon2.png';
 
 // Import AOS and its CSS
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 const BusinessSuccessSection = () => {
   useEffect(() => {
@@ -23,7 +23,7 @@ const BusinessSuccessSection = () => {
     <div className="section tekup-section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6" data-aos="fade-up">
+          <div className="col-lg-6">
             <div className="tekup-thumb mr-30">
               {/* Use imported images */}
               <img src={thumb1} alt="Thumb" />
